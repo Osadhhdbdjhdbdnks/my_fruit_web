@@ -11,9 +11,9 @@ export default function GiftsPage() {
     : [];
 
   return (
-    <main className="pt-24 lg:pt-28">
+    <main className="pt-16 sm:pt-18 lg:pt-20">
       {/* Header */}
-      <section className="relative h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[45vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={IMAGES.giftCollection}
@@ -40,8 +40,8 @@ export default function GiftsPage() {
       </section>
 
       {/* Gift Philosophy */}
-      <section className="py-24 lg:py-32 bg-cream">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="py-16 lg:py-24 bg-cream">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,9 +57,9 @@ export default function GiftsPage() {
       </section>
 
       {/* Gift Products */}
-      <section className="py-16 lg:py-24 bg-ivory">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+      <section className="py-14 lg:py-20 bg-ivory">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
             {giftProducts.map((product, index) => (
               product && (
                 <motion.div
@@ -77,9 +77,9 @@ export default function GiftsPage() {
       </section>
 
       {/* Gift Info */}
-      <section className="py-24 bg-cream">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <section className="py-16 lg:py-24 bg-cream">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {[
               {
                 title: 'Beautifully Presented',
@@ -111,8 +111,8 @@ export default function GiftsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-forest">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="py-16 lg:py-20 bg-forest">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center">
           <h2 className="font-serif text-3xl text-cream">Browse All Collections</h2>
           <p className="mt-4 text-cream/60">Explore our full range of seasonal fruit.</p>
           <Link

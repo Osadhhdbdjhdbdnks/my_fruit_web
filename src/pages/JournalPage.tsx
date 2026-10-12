@@ -38,10 +38,10 @@ const journalEntries = [
 
 export default function JournalPage() {
   return (
-    <main className="pt-24 lg:pt-28">
+    <main className="pt-16 sm:pt-18 lg:pt-20">
       {/* Header */}
-      <section className="py-16 lg:py-24 bg-cream">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+      <section className="py-14 lg:py-20 bg-cream">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,9 +57,9 @@ export default function JournalPage() {
       </section>
 
       {/* Journal Entries */}
-      <section className="py-16 lg:py-24 bg-ivory">
-        <div className="max-w-5xl mx-auto px-6 lg:px-12">
-          <div className="space-y-16 lg:space-y-24">
+      <section className="py-14 lg:py-20 bg-ivory">
+        <div className="max-w-5xl mx-auto px-5 sm:px-8 lg:px-14">
+          <div className="space-y-12 lg:space-y-20">
             {journalEntries.map((entry, index) => (
               <motion.article
                 key={entry.id}

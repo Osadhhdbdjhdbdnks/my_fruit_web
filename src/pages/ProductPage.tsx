@@ -15,7 +15,7 @@ export default function ProductPage() {
   const product = getProductById(id || '');
   if (!product) {
     return (
-      <main className="pt-32 pb-20 text-center">
+      <main className="pt-32 pb-20 text-center px-5">
         <h1 className="font-serif text-3xl text-brown">Product Not Found</h1>
         <Link to="/shop" className="mt-4 inline-block text-terracotta">Return to Shop</Link>
       </main>
@@ -33,9 +33,9 @@ export default function ProductPage() {
   };
 
   return (
-    <main className="pt-24 lg:pt-28">
+    <main className="pt-16 sm:pt-18 lg:pt-20">
       {/* Breadcrumb */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-6">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14 py-5">
         <Link to="/shop" className="inline-flex items-center gap-2 text-sm text-brown/60 hover:text-terracotta transition-colors">
           <ArrowLeft size={14} />
           Back to Shop
@@ -43,8 +43,8 @@ export default function ProductPage() {
       </div>
 
       {/* Product Detail */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+      <section className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14 pb-16 lg:pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
           {/* Gallery */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -154,10 +154,10 @@ export default function ProductPage() {
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (
-        <section className="py-20 bg-cream">
-          <div className="max-w-7xl mx-auto px-6 lg:px-12">
-            <h2 className="font-serif text-3xl text-brown text-center mb-12">You May Also Enjoy</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="py-16 lg:py-20 bg-cream">
+          <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14">
+            <h2 className="font-serif text-2xl sm:text-3xl text-brown text-center mb-10">You May Also Enjoy</h2>
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
               {relatedProducts.map(p => (
                 <ProductCard key={p.id} product={p} />
               ))}

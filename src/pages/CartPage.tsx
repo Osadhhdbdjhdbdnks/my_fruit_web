@@ -9,7 +9,7 @@ export default function CartPage() {
   if (items.length === 0) {
     return (
       <main className="pt-32 pb-20">
-        <div className="max-w-2xl mx-auto px-6 text-center">
+        <div className="max-w-2xl mx-auto px-5 sm:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -33,8 +33,8 @@ export default function CartPage() {
   }
 
   return (
-    <main className="pt-24 lg:pt-28">
-      <div className="max-w-5xl mx-auto px-6 lg:px-12 py-12 lg:py-20">
+    <main className="pt-16 sm:pt-18 lg:pt-20">
+      <div className="max-w-4xl mx-auto px-5 sm:px-8 lg:px-14 py-10 lg:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

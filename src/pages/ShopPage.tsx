@@ -16,10 +16,10 @@ export default function ShopPage() {
     : null;
 
   return (
-    <main className="pt-24 lg:pt-28">
+    <main className="pt-16 sm:pt-18 lg:pt-20">
       {/* Header */}
-      <section className="py-16 lg:py-24 bg-cream">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+      <section className="py-14 lg:py-20 bg-cream">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -69,9 +69,9 @@ export default function ShopPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="py-16 lg:py-24 bg-ivory">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-10">
+      <section className="py-16 lg:py-20 bg-ivory">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6 lg:gap-8">
             {filteredProducts.map((product, index) => (
               <motion.div
                 key={product.id}

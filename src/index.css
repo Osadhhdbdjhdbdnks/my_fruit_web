@@ -52,6 +52,23 @@ body {
   background: var(--color-terracotta);
 }
 
+/* Custom utilities */
+.h-18 {
+  height: 4.5rem;
+}
+
+.pt-18 {
+  padding-top: 4.5rem;
+}
+
+.sm\:pt-18 {
+  padding-top: 4.5rem;
+}
+
+.sm\:h-18 {
+  height: 4.5rem;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

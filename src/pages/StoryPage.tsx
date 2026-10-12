@@ -5,9 +5,9 @@ import { IMAGES } from '../data/products';
 
 export default function StoryPage() {
   return (
-    <main className="pt-24 lg:pt-28">
+    <main className="pt-16 sm:pt-18 lg:pt-20">
       {/* Hero */}
-      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] min-h-[320px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={IMAGES.storyHero}
@@ -30,8 +30,8 @@ export default function StoryPage() {
       </section>
 
       {/* Story Content */}
-      <section className="py-24 lg:py-36 bg-cream">
-        <div className="max-w-3xl mx-auto px-6 lg:px-12">
+      <section className="py-16 lg:py-28 bg-cream">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 lg:px-14">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -46,9 +46,9 @@ export default function StoryPage() {
       </section>
 
       {/* Philosophy */}
-      <section className="py-24 lg:py-36 bg-ivory">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+      <section className="py-16 lg:py-28 bg-ivory">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -86,20 +86,20 @@ export default function StoryPage() {
       </section>
 
       {/* Values */}
-      <section className="py-24 lg:py-36 bg-cream">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <section className="py-16 lg:py-28 bg-cream">
+        <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
             <span className="font-handwritten text-terracotta text-lg">What Guides Us</span>
-            <h2 className="font-serif text-4xl text-brown mt-4">Our Values</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl text-brown mt-3">Our Values</h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14">
             {[
               {
                 title: 'Seasonality',
@@ -131,8 +131,8 @@ export default function StoryPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 lg:py-32 bg-forest">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+      <section className="py-16 lg:py-24 bg-forest">
+        <div className="max-w-3xl mx-auto px-5 sm:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -40,7 +40,7 @@ export default function CheckoutPage() {
 
   if (items.length === 0 && !submitted) {
     return (
-      <main className="pt-32 pb-20 text-center">
+      <main className="pt-32 pb-20 text-center px-5">
         <h1 className="font-serif text-3xl text-brown">Nothing to Checkout</h1>
         <p className="mt-4 text-brown/60">Your bag is empty.</p>
         <Link to="/shop" className="mt-6 inline-block text-terracotta">Continue Shopping</Link>
@@ -51,7 +51,7 @@ export default function CheckoutPage() {
   if (submitted) {
     return (
       <main className="pt-32 pb-20">
-        <div className="max-w-2xl mx-auto px-6 text-center">
+        <div className="max-w-2xl mx-auto px-5 sm:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -80,8 +80,8 @@ export default function CheckoutPage() {
   }
 
   return (
-    <main className="pt-24 lg:pt-28">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 py-12 lg:py-20">
+    <main className="pt-16 sm:pt-18 lg:pt-20">
+      <div className="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-14 py-10 lg:py-16">
         <Link to="/cart" className="inline-flex items-center gap-2 text-sm text-brown/60 hover:text-terracotta transition-colors mb-8">
           <ArrowLeft size={14} />
           Back to Bag
